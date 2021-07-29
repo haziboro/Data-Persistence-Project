@@ -37,6 +37,10 @@ public class MenuUIHandler : MonoBehaviour
     //Starts a new game
     public void StartNewGame()
     {
+        if (string.IsNullOrEmpty(playerName.text))
+        {
+            playerName.text = "Default";
+        }
         ScoreTracker.instance.playerName = playerName.text;
         SceneManager.LoadScene(1);
     }

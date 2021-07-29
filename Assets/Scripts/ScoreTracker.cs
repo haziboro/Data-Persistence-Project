@@ -72,7 +72,7 @@ public class ScoreTracker : MonoBehaviour
         }
     }
 
-    //Subclass for sorting player name/score pairs and saving data
+    //Subclass for storing player name/score pairs
     public class PlayerData
     {
         public PlayerData(int pScore = 0, string pName = "Doom")
